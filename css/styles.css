@@ -793,8 +793,6 @@ img, svg{
 }
 
 .form{
-    /* width: 448px; */
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -906,21 +904,19 @@ img, svg{
     appearance: none;
 }
 
-.icon-checkbox{
-    display: inline-block;
+.icon-check{
     width: 16px;
     height: 15px;
     margin-right: 7px;
 
-    background-color: var(--primary-background-color);
-    /* background-image: url(./images/sprite.svg#icon-modal-check); */
     border: 2px solid #212121;
     border-radius: 2px;
+    background-color:var(--primary-background-color);
+    background-origin: border-box;
+
 }
 
-.checkbox:checked + .icon-checkbox{
-    border: none;
+.checkbox:checked + .icon-check{
+    border: 2px solid var(--accent-color);
     background-color: var(--accent-color);
-    background-image: url(../images/modal-check.svg);
-    background-origin: border-box;
 }
