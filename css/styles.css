@@ -764,7 +764,6 @@ padding: 94px 0px;
 
     width: 30px;
     height: 30px;
-    /* padding: 0; */
 
     transform: scale(1);
     outline: transparent;
@@ -800,10 +799,11 @@ padding: 94px 0px;
 }
 
 .form{
-    width: 448px;
+    /* width: 448px; */
 
-    display: flex;
+    /* display: flex;
     flex-direction: column;
+    justify-content: center; */
 }
 
 .form-field{
@@ -857,4 +857,23 @@ padding: 94px 0px;
 .comment:focus{
     border-color: var(--accent-color);
     outline: none;
+}
+
+.checkbox-field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.checkbox-field>span{
+    /* font-style: normal; */
+    font-weight: normal;
+    /* font-size: 14px; */
+    line-height: 1.71;
+    color: var(--secondary-text-color);
+}
+
+.checkbox-link{
+    color: var(--accent-color);
 }
